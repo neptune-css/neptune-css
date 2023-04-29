@@ -1,0 +1,58 @@
+/* Default progress bar */
+.progress {
+    position: relative;
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid var(--background);
+    border-radius: var(--rounded-m);
+    background-color: var(--background-light);
+}
+
+.progress .progress-bar {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: var(--rounded-m);
+    background-color: var(--background);
+    z-index: 200;
+}
+
+/* Colors */
+/* Primary */
+.progress-primary > .progress-bar { background-color: var(--primary);}
+
+/* Accent */
+.progress-accent > .progress-bar { background-color: var(--accent);}
+
+/* Information */
+.progress-info > .progress-bar { background-color: var(--info);}
+
+/* Success */
+.progress-success > .progress-bar { background-color: var(--success);}
+
+/* Warning */
+.progress-warning > .progress-bar { background-color: var(--warning);}
+
+/* Error */
+.progress-error > .progress-bar { background-color: var(--error);}
+
+/* Sizes */
+/* Progress bar XS */
+.progress-xs { height: .5rem;}
+
+/* Progress bar S */
+.progress-s { height: 1rem;}
+
+/* Progress bar M */
+.progress-m { height: 2rem;}
+
+/* Progress bar L */
+.progress-l { height: 2.5rem;}
+
+/* Progress bar XL */
+.progress-xl { height: 3rem;}

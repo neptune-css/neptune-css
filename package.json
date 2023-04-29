@@ -1,0 +1,30 @@
+{
+  "name": "neptune",
+  "version": "0.4.0",
+  "description": "A lightweight CSS framework.",
+  "main": "/neptune.css",
+  "style": "/neptune.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CGWebDev2003/neptune.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "ui",
+    "lightweight",
+    "neptune"
+  ],
+  "author": "CGWebDev2003",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CGWebDev2003/neptune/issues"
+  },
+  "homepage": "https://github.com/CGWebDev2003/neptune#readme",
+  "dependencies": {
+    "smooth-scrollbar": "^8.8.3"
+  }
+}

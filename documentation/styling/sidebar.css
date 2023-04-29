@@ -1,0 +1,39 @@
+
+.sidebar {
+    max-width: 15rem;
+    height: 100%;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light);
+    border-radius: var(--rounded-m);
+    z-index: 3;
+}
+ 
+.sidebar > h4 { 
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.sidebar > h6 { 
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+.sidebar > .sidebar-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sidebar-link:hover {
+    cursor: pointer;
+    transition: var(--transition-duration);
+    color: var(--primary);
+}
+
+.sidebar > .active-link {
+    font-weight: 700;
+    color: var(--primary);
+}

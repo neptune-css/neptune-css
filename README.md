@@ -1,2 +1,2 @@
-# neptune
-A lightweight css framework
+# Neptune
+A lightweight CSS framework

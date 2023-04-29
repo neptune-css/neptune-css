@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Import bootstrap5 icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Import neptune ui -->
+        <link rel="stylesheet" href="/neptune.css">
+
+        <!-- Import main CSS file -->
+        <link rel="stylesheet" href="/documentation/styling/documentation.css">
+
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <title>Dokumentation | Neptune CSS framework</title>
+    </head>
+    <body>
+        <script src="/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+        <script>
+            var Scrollbar = window.Scrollbar;
+          
+            Scrollbar.init(document.querySelector('iframe'), options);
+        </script>
+
+        <header>
+            <div class="header-content">
+                <div class="neptuneLogo">
+                    <a href="/documentation/de/index.html">
+                        <img class="logoImage" src="/assets/logo.png" alt="Neptune logo">
+                    </a>
+                </div>
+
+                <nav class="header-navigation">
+                    <a class="navigation-link" href="/documentation/de/index.html">
+                        <span class="link-text">
+                            <i class="bi bi-house"></i>
+                            Home
+                        </span>
+                        <div class="active-bar"></div>
+                    </a>
+                    <a class="navigation-link active-link" href="/documentation/de/docs/index.html">
+                        <span class="link-text">
+                            <i class="bi bi-journal-code"></i>
+                            Doku
+                        </span>
+                        <div class="active-bar"></div>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <script src="/documentation/controller/sidebarController.js"></script>
+            <div class="sidebar">
+                <h4>Inhalt</h4>
+
+                <h6>Utilities</h6>
+                <a class="sidebar-link" id="variable-link">Variablen</a>
+                <a class="sidebar-link" id="color-link">Farben</a>
+                <a class="sidebar-link" id="typography-link">Typografie</a>
+
+                <h6>Komponenten</h6>
+                <a class="sidebar-link" id="badge-link" onclick="openView('badge-view')">Badges</a>
+                <a class="sidebar-link active-link" id="button-link">Buttons</a>
+                <a class="sidebar-link" id="toast-link">Toasts</a>
+
+            </div>
+
+            <div class="doc-view" id="variable-view">
+                <h2 class="view-headline">Variables</h2>
+            </div>
+
+            <div class="doc-view" id="color-view">
+                <h2 class="view-headline">Colors</h2>
+            </div>
+
+            <div class="doc-view" id="typography-view">
+                <h2 class="view-headline">Typography</h2>
+            </div>
+
+            <div class="doc-view" id="badge-view">
+                <h2 class="view-headline">Badges</h2>
+
+                <iframe class="example" src="/examamples/components/example_badges.html" width="600" frameborder="0"></iframe>
+            </div>
+
+            <div class="doc-view" id="button-view">
+                <h2 class="view-headline">Buttons</h2>
+
+                <iframe class="example" src="/examamples/components/example_buttons.html" width="600" frameborder="0"></iframe>
+            </div>
+
+            <div class="doc-view" id="toast-view">
+                <h2 class="view-headline">Toasts</h2>
+
+                <iframe class="example" src="/examamples/components/example_toasts.html" width="600" frameborder="0"></iframe>
+            </div>
+
+        </div>
+
+    </body>
+</html>

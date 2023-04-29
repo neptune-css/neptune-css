@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-light);
+}
+
+.neptuneLogo {
+    position: relative;
+    max-width: 35rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logoImage {
+    position: relative;
+    height: 6rem;
+}
+
+.logoText {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: hsl(190, 100%, 45%);
+}
+
+.main-headline {
+    position: relative;
+    margin-left: 1rem;
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.secondary-headline {
+    position: relative;
+    margin-left: 1rem;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.example-box {
+    position: relative;
+    padding: 2rem 1rem;
+    min-height: 3rem;
+    height: auto;
+    max-height: 60vh;
+    min-width: 250px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    align-items: start;
+}
+
+.example-box .example-title {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
