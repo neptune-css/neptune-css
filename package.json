@@ -1,6 +1,6 @@
 {
-  "name": "neptune",
-  "version": "0.4.0",
+  "name": "neptune-css",
+  "version": "0.4.1",
   "description": "A lightweight CSS framework.",
   "main": "/neptune.css",
   "style": "/neptune.css",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CGWebDev2003/neptune.git"
+    "url": "git+https://github.com/neptune-css/neptune-css.git"
   },
   "keywords": [
     "css",
@@ -21,9 +21,9 @@
   "author": "CGWebDev2003",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CGWebDev2003/neptune/issues"
+    "url": "https://github.com/neptune-css/neptune-css/issues"
   },
-  "homepage": "https://github.com/CGWebDev2003/neptune#readme",
+  "homepage": "https://github.com/neptune-css/neptune-css#readme",
   "dependencies": {
     "smooth-scrollbar": "^8.8.3"
   }
