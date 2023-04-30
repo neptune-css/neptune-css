@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [0.5.0] - 2023-04-30
+
+### Added
+
+- Link component
+- Spinner component
+
+## [0.4.2] - 2023-04-30
+
+## Fixed
+
+- Minifyed all css files and import only minifyed files into neptune.css file
+
+## [0.4.1] - 2023-04-30
+
+### Changed
+
+- Changed package name from "neptune" to "neptune-css"
+- Changed repository, bugs and homepage in package.json
+
 ## [Released]
 
 ## [0.4.0] - 2023-04-29
