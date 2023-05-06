@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Import Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Import example style -->
+        <link rel="stylesheet" href="/examamples/example_style.min.css">
+
+        <!-- Import neptune ui -->
+        <link rel="stylesheet" href="/neptune.css">
+
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <title>Inputs | Neptune examples</title>
+    </head>
+    <body>
+        <h1 class="main-headline">Inputs</h1>
+        <h2 class="secondary-headline">Input fields</h2>
+        <div class="example-box">
+            <h3 class="example-title">Default input</h3>
+            <div class="input-box">
+                <label class="text-m" for="default-input">Input:</label>
+                <div class="input-field">
+                    <span class="input-icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" name="default-input" id="default-input" placeholder="Default input">
+                </div>
+                <span class="text-s input-validation">
+                    Validation text
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Information</h3>
+            <div class="input-box">
+                <label class="text-m" for="default-input">Input:</label>
+                <div class="input-field input-field-info">
+                    <span class="input-icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input class="input-info" type="text" name="default-input" id="default-input" placeholder="Default input">
+                </div>
+                <span class="text-s input-validation validation-info">
+                    Information
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Success</h3>
+            <div class="input-box">
+                <label class="text-m" for="default-input">Input:</label>
+                <div class="input-field input-field-success">
+                    <span class="input-icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input class="input-success" type="text" name="default-input" id="default-input" placeholder="Default input">
+                </div>
+                <span class="text-s input-validation validation-success">
+                    Sucess
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Warning</h3>
+            <div class="input-box">
+                <label class="text-m" for="default-input">Input:</label>
+                <div class="input-field input-field-warning">
+                    <span class="input-icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input class="input-warning" type="text" name="default-input" id="default-input" placeholder="Default input">
+                </div>
+                <span class="text-s input-validation validation-warning">
+                    Warning!
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Error</h3>
+            <div class="input-box">
+                <label class="text-m" for="default-input">Input:</label>
+                <div class="input-field input-field-error">
+                    <span class="input-icon">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input class="input-error" type="text" name="default-input" id="default-input" placeholder="Default input">
+                </div>
+                <span class="text-s input-validation validation-error">
+                    Error!
+                </span>
+            </div>
+        </div>
+
+        <h2 class="secondary-headline">Other inputs</h2>
+        <div class="example-box">
+            <h3 class="example-title">Code/Pin input</h3>
+            <div class="digit-box">
+                <div class="digit-field-group">
+                    <input type="number" class="digit-field" name="digit1" id="digit1">
+                    <input type="number" class="digit-field" name="digit2" id="digit2">
+                    <input type="number" class="digit-field" name="digit3" id="digit3">
+                    <input type="number" class="digit-field" name="digit4" id="digit4">
+                </div>
+                <button type="submit" class="button-m submit-button button-primary" id="submit-digits-button" name="auth-button">
+                    <span class="button-icon">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </span>    
+                    Authenticate
+                </button>
+            </div>
+            
+            <script>
+                const submitButton = document.getElementById('submit-digits-button');
+                const digit1 = document.getElementById('digit1');
+                const digit2 = document.getElementById('digit2');
+                const digit3 = document.getElementById('digit3');
+                const digit4 = document.getElementById('digit4');
+
+                digit1.oninput = function() {
+                    if(digit1.value.length >= 1) {
+                        digit2.focus();
+                    }
+                };
+
+                digit2.oninput = function() {
+                    if(digit2.value.length >= 1) {
+                        digit3.focus();
+                    }
+                };
+
+                digit3.oninput = function() {
+                    if(digit3.value.length >= 1) {
+                        digit4.focus();
+                    }
+                };
+
+                digit4.oninput = function() {
+                    if(digit4.value.length >= 1) {
+                        submitButton.focus();
+                    }
+                };
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+/* Setup default input field */
+.input-field {
+    position: relative;
+    margin-top: .5rem;
+    border: 1px solid var(--white-70);
+    border-radius: var(--rounded-s);
+    /* padding: 6px 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.input-field > .input-icon {
+    position: relative;
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 8px;
+    border-right: 1px solid var(--white-90);
+}
+
+.input-field > input {
+
+    outline: unset;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 4px;
+    color: var(--text-secondary);
+}
+
+/* Setup input field states */
+.input-field > input:active .input-field {
+    border: 3px solid var(--primary);
+}
+
+/* Setup input field validation states */
+/* Validation information */
+.input-field-info { 
+    background-color: var(--info-90);
+    border: 3px solid var(--info);
+}
+.input-info { background-color: var(--info-90);}
+
+/* Validation success */
+.input-field-success { 
+    background-color: var(--success-90);
+    border: 3px solid var(--success);
+}
+.input-success { background-color: var(--success-90);}
+
+/* Validation warning */
+.input-field-warning { 
+    background-color: var(--warning-90);
+    border: 3px solid var(--warning);
+}
+.input-warning { background-color: var(--warning-90);}
+
+/* Validation error */
+.input-field-error { 
+    background-color: var(--error-90);
+    border: 3px solid var(--error);
+}
+.input-error { background-color: var(--error-90);}
+
+/* Setup input validation states */
+.validation-info { color: var(--info);}
+.validation-success { color: var(--success);}
+.validation-warning { color: var(--warning);}
+.validation-error { color: var(--error);}
+
+/* ----------------------------- */
+/* ------- Code/PIN input ------ */
+/* ----------------------------- */
+
+.digit-box {
+    position: relative;
+    width: calc(4 * 15% + 4 * 0.5rem);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.digit-box > .digit-field-group {
+    position: relative;
+    width: auto;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.digit-field-group > .digit-field {
+    position: relative;
+    min-width: 4rem;
+    width: 15%;
+    max-width: 8rem;
+    height: 2.5rem;
+    border: 1px solid var(--white-70);
+    border-radius: var(--rounded-m);
+    text-align: center;
+    outline-color: var(--primary-70);
+    color: var(--text-secondary);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-box > #submit-digits-button {
+    position: relative;
+    width: calc(4 * 15% + 4 * 0.5rem) !important;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#submit-digits-button > .button-icon { color: var(--text-button);}
