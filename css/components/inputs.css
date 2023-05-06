@@ -70,9 +70,26 @@
 .validation-error { color: var(--error);}
 
 /* ----------------------------- */
+/* ------- Password input ------ */
+/* ----------------------------- */
+.password-input-box > .password-input-field > .show-password-button {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    margin-right: .25rem;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.show-password-button:hover {
+    cursor: pointer;
+    transition: var(--transition-duration);
+    background-color: var(--white-90) !important;
+}
+
+/* ----------------------------- */
 /* ------- Code/PIN input ------ */
 /* ----------------------------- */
-
 .digit-box {
     position: relative;
     width: calc(4 * 15% + 4 * 0.5rem);
@@ -124,3 +141,152 @@ input[type=number] {
 }
 
 #submit-digits-button > .button-icon { color: var(--text-button);}
+
+/* ----------------------------- */
+/* --------- Checkboxes -------- */
+/* ----------------------------- */
+/* Setup default checkbox */
+.checkbox-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.3rem;
+}
+
+.checkbox-box > .checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    padding: 4px 0;
+    margin-left: .2rem;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    font: inherit;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--white-60);
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.checkbox-box > .checkbox::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--text-button);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.checkbox-box > .checkbox:checked { 
+    border: 1px solid var(--white-80);    
+    background-color: var(--primary);
+}
+
+.checkbox-box > .checkbox:checked::before {
+    transform: scale(1);
+}
+
+/* Setup accent checkbox */
+.checkbox-box > .checkbox-accent:checked {    
+    background-color: var(--accent);
+}
+
+/* Setup information checkbox */
+.checkbox-box > .checkbox-info:checked {    
+    background-color: var(--info);
+}
+
+/* Setup success checkbox */
+.checkbox-box > .checkbox-success:checked {    
+    background-color: var(--success);
+}
+
+/* Setup warning checkbox */
+.checkbox-box > .checkbox-warning:checked {    
+    background-color: var(--warning);
+}
+
+/* Setup error checkbox */
+.checkbox-box > .checkbox-error:checked {    
+    background-color: var(--error);
+}
+
+/* Setup checkbox label */
+.checkbox-box > .checkbox-label {
+    position: relative;
+    top: -.05rem;
+    padding: 4px 0;
+    margin-right: .5rem;
+    font-size: 16px;
+}
+
+/* ----------------------------- */
+/* -------- Radio buttons ------ */
+/* ----------------------------- */
+/* Setup default radio button */
+.radio-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.3rem;
+}
+
+.radio-box > .radio-button {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    padding: 4px 0;
+    margin-left: .2rem;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    font: inherit;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--white-60);
+    border-radius: 2rem;
+    transform: translateY(-0.075em);
+}
+
+.radio-box > .radio-button::before {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    transform: scale(0);
+    border-radius: 2rem;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--primary);
+}
+
+.radio-box > .radio-button:checked { 
+    border: 1px solid var(--white-80);    
+    background-color: var(--text-button);
+}
+
+.radio-box > .radio-button:checked::before {
+    transform: scale(1);
+}
+
+/* Primary radio button */
+.radio-box > .radio-button::before { box-shadow: inset 1em 1em var(--primary);}
+
+/* Accent radio button */
+.radio-box > .radio-button-accent::before { box-shadow: inset 1em 1em var(--accent);}
+
+/* Information radio button */
+.radio-box > .radio-button-info::before { box-shadow: inset 1em 1em var(--info);}
+
+/* Success radio button */
+.radio-box > .radio-button-success::before { box-shadow: inset 1em 1em var(--success);}
+
+/* Warning radio button */
+.radio-box > .radio-button-warning::before { box-shadow: inset 1em 1em var(--warning);}
+
+/* Accent radio button */
+.radio-box > .radio-button-error::before { box-shadow: inset 1em 1em var(--error);}

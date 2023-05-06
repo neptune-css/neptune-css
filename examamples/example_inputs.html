@@ -100,6 +100,62 @@
             </div>
         </div>
 
+        <div class="example-box">
+            <h3 class="example-title">Password input</h3>
+            <div class="input-box password-input-box">
+                <label class="text-m" for="password-input">Password:</label>
+                <div class="input-field password-input-field">
+                    <span class="input-icon">
+                        <i class="bi bi-lock"></i>
+                    </span>
+                    <input type="password" name="password-input" id="password-input" placeholder="Password">
+                    <button class="show-password-button" id="show-password-button" onclick="showPassword()">
+                        <span class="button-icon" id="show-password-button-icon">
+                            <i class="bi bi-eye-fill"></i>
+                        </span>
+                    </button>
+                </div>
+                <span class="text-s input-validation"></span>
+            </div>
+            <script>
+                const passwordInput = document.getElementById('password-input');
+                const showPasswordButton = document.getElementById('show-password-button');
+                const showPasswordButtonIcon = document.getElementById('show-password-button-icon');
+
+                const eyeOpen = '<i class="bi bi-eye-fill"></i>';
+                const eyeClosed = '<i class="bi bi-eye-slash-fill"></i>';
+
+                function showPassword() {
+                    // Show password
+                    if(passwordInput.type === 'password') {
+                        passwordInput.type = 'text';
+                    }
+
+                    // Change button icon
+                    showPasswordButtonIcon.innerHTML = '';
+                    showPasswordButtonIcon.innerHTML = eyeClosed;
+
+                    // Change onclick event
+                    showPasswordButton.setAttribute('onclick', 'hidePassword()');
+                }
+
+                function hidePassword() {
+                    // Hide password
+                    if(passwordInput.type === 'text') {
+                        passwordInput.type = 'password';
+                    }
+
+                    // Change button icon
+                    showPasswordButtonIcon.innerHTML = '';
+                    showPasswordButtonIcon.innerHTML = eyeOpen;
+
+                    // Change onclick event
+                    showPasswordButton.setAttribute('onclick', 'showPassword()');
+
+                }
+            </script>
+        </div>
+
         <h2 class="secondary-headline">Other inputs</h2>
         <div class="example-box">
             <h3 class="example-title">Code/Pin input</h3>
@@ -149,6 +205,110 @@
                     }
                 };
             </script>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Checkboxes</h3>
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox" name="default-checkbox" id="default-checkbox" checked>
+                <label class="checkbox-label" for="default-checkbox" id="default-checkbox-label">
+                    Default checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-primary" name="checkbox-primary" id="checkbox-primary" checked>
+                <label class="checkbox-label" for="checkbox-primary" id="primary-checkbox-label">
+                    Primary checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-accent" name="checkbox-accent" id="checkbox-accent" checked>
+                <label class="checkbox-label" for="checkbox-accent" id="checkbox-accent-label">
+                    Accent checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-information" name="checkbox-info" id="checkbox-info" checked>
+                <label class="checkbox-label" for="checkbox-info" id="checkbox-info-label">
+                    Information checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-success" name="checkbox-success" id="checkbox-success" checked>
+                <label class="checkbox-label" for="checkbox-success" id="checkbox-success-label">
+                    Success checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-warning" name="checkbox-warning" id="checkbox-warning" checked>
+                <label class="checkbox-label" for="checkbox-warning" id="checkbox-warning-label">
+                    Warning checkbox
+                </label>
+            </div>
+
+            <div class="input-box checkbox-box">
+                <input type="checkbox" class="checkbox checkbox-error" name="checkbox-error" id="checkbox-error" checked>
+                <label class="checkbox-label" for="checkbox-error" id="checkbox-error-label">
+                    Error checkbox
+                </label>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Radio buttons</h3>
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button" name="radio-button-default" id="radio-button-default">
+                <label for="radio-button-default" class="radio-button-label">
+                    Default radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-primary" name="radio-button-primary" id="radio-button-primary">
+                <label for="radio-button-primary" class="radio-button-label">
+                    Primary radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-accent" name="radio-button-accent" id="radio-button-accent">
+                <label for="radio-button-accent" class="radio-button-label">
+                    Accent radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-info" name="radio-button-info" id="radio-button-info">
+                <label for="radio-button-info" class="radio-button-label">
+                    Information radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-success" name="radio-button-success" id="radio-button-success">
+                <label for="radio-button-success" class="radio-button-label">
+                    Success radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-warning" name="radio-button-warning" id="radio-button-warning">
+                <label for="radio-button-warning" class="radio-button-label">
+                    Warning radio button
+                </label>
+            </div>
+
+            <div class="input-box radio-box">
+                <input type="radio" class="radio-button radio-button-error" name="radio-button-error" id="radio-button-error">
+                <label for="radio-button-error" class="radio-button-label">
+                    Error radio button
+                </label>
+            </div>
         </div>
     </body>
 </html>
