@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.8.0] - 2023-05-06
+
+### Added
+
+- Slider input
+- Search bar
+
+## [Released]
+
 ## [0.7.0] - 2023-05-06
 
 ### Added
@@ -42,8 +51,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed package name from "neptune" to "neptune-css"
 - Changed repository, bugs and homepage in package.json
-
-## [Released]
 
 ## [0.4.0] - 2023-04-29
 

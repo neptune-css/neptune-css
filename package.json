@@ -1,9 +1,9 @@
 {
-  "name": "neptune-css",
-  "version": "0.7.0",
+  "name": "@neptune-css/neptune",
+  "version": "0.8.0",
   "description": "A lightweight CSS framework.",
-  "main": "/neptune.css",
-  "style": "/neptune.css",
+  "main": "./neptune.css",
+  "style": "./neptune.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/neptune-css/neptune-css/issues"
   },
-  "homepage": "https://github.com/neptune-css/neptune-css#readme",
-  "dependencies": {
-    "smooth-scrollbar": "^8.8.3"
-  }
+  "homepage": "https://github.com/neptune-css/neptune-css#readme"
 }

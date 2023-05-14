@@ -10,6 +10,18 @@ button {
     transition: var(--transition-duration);
 }
 
+button .button-icon-left {
+    position: relative;
+    margin-right: .5rem;
+    color: var(--text-button);
+}
+
+button .button-icon-right {
+    position: relative;
+    margin-left: .5rem;
+    color: var(--text-button);
+}
+
 button:hover { cursor: pointer;}
 button:disabled { cursor: not-allowed;}
 button:focus {

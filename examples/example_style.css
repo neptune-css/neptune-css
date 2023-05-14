@@ -54,6 +54,7 @@ body {
 .example-box {
     position: relative;
     padding: 2rem 1rem;
+    margin: 3rem;
     min-height: 3rem;
     height: auto;
     max-height: 60vh;

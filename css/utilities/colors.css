@@ -1,7 +1,6 @@
 /* Setup color variables */
 :root {
     /* Shades */
-    /* Light shades */
     --s-0: 0%;
     --s-10: 10%;
     --s-20: 20%;
@@ -47,7 +46,6 @@
     --background-light: var(--white);
     --background: var(--white-90);
     --background-dark: var(--white-80);
-
 
     /* Success */
     --success-hue: 140;
@@ -120,7 +118,7 @@
     --primary-100: hsl(var(--primary-hue), 100%, var(--s-100));
 
     /* Accent color */
-    --accent-hue: 10;
+    --accent-hue: 160;
     --accent: var(--accent-50);
     --accent-10: hsl(var(--accent-hue), 100%, var(--s-10));
     --accent-20: hsl(var(--accent-hue), 100%, var(--s-20));

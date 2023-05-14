@@ -2,9 +2,9 @@
 .input-field {
     position: relative;
     margin-top: .5rem;
+    width: 280px;
     border: 1px solid var(--white-70);
     border-radius: var(--rounded-s);
-    /* padding: 6px 8px; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -19,9 +19,8 @@
 }
 
 .input-field > input {
-
-    outline: unset;
     position: relative;
+    outline: unset;
     border: none;
     font-size: 16px;
     line-height: 18px;
@@ -85,6 +84,104 @@
     cursor: pointer;
     transition: var(--transition-duration);
     background-color: var(--white-90) !important;
+}
+
+/* ----------------------------- */
+/* --------- Searchbar --------- */
+/* ----------------------------- */
+.searchbar-box {
+    position: relative;
+    margin-top: .5rem;
+    width: 280px;
+    border: 1px solid var(--white-70);
+    border-radius: var(--rounded-s);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.searchbar-box .searchbar {
+    position: relative;
+    width: calc(100% - 20px) !important;
+    outline: unset;
+    border: none;
+    padding: 6px;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 4px;
+    color: var(--text-secondary);
+}
+
+.searchbar-box .search-button {
+    position: relative;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-left: 4px;
+    background-color: transparent;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    transition: var(--transition-duration);
+    background-color: var(--white-90);
+}
+
+/* ----------------------------- */
+/* ---------- Slider ----------- */
+/* ----------------------------- */
+.slider-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: .5rem;
+  max-width: 500px;
+  height: 4rem;
+  width: 280px;
+  padding: 0px 10px;
+}
+
+.simple-slider {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.simple-slider::-webkit-slider-runnable-track {
+  height: 15px;
+  background: var(--white-90);
+  border-radius: 16px;
+}
+
+.simple-slider::-moz-range-track {
+  height: 15px;
+  background: var(--white-90);
+  border-radius: 16px;
+}
+
+.simple-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  box-shadow: -407px 0 0 400px var(--primary);
+}
+
+.simple-slider::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  box-shadow: -407px 0 0 400px var(--primary);
 }
 
 /* ----------------------------- */
