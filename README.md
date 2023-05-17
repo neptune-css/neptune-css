@@ -1,8 +1,7 @@
 ![readme_banner](https://github.com/neptune-css/neptune-css/assets/122671813/dcae4762-d754-476f-a8be-35715da77fe8)
 
 
-# Neptune
-A lightweight CSS framework
+# Introduction
 
 ## Install
 
