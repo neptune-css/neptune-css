@@ -5,7 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Released]
+
+## [v0.9.0] - 2023-05-18
+
+### Added
+
+- Added --highlight-secondary color variable
+- Added password input component
+- Added phone input component
+- Added url input component
+
+### Changed
+
+- Changed text-decoration in typography.css
+- Changed .highlighted-secondarys color variable
 
 ## [v0.8.1] - 2023-05-17
 
@@ -19,8 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Slider input
 - Search bar
-
-## [Released]
 
 ## [0.7.0] - 2023-05-06
 

@@ -5,14 +5,15 @@
 body { font-family: 'Open Sans', sans-serif;}
 
 /* Text styles */
+/* TODO => double, wavy, dotted, dashed for overline and underline */
 .cursive { font-style: italic;}
 .line-through { text-decoration: line-through;}
 .overlined { text-decoration: overline;}
 .underlined { text-decoration: underline;}
-.double-line { text-decoration: double;}
-.wavy-line { text-decoration: wavy;}
-.dotted-line { text-decoration: dotted;}
-.dashed-line { text-decoration: dashed;}
+.double-line { text-decoration: underline double;}
+.wavy-line { text-decoration: underline wavy;}
+.dotted-line { text-decoration: underline dotted;}
+.dashed-line { text-decoration: underline dashed;}
 
 /* Text highlighting */
 .highlighted-primary {
@@ -24,7 +25,7 @@ body { font-family: 'Open Sans', sans-serif;}
 }
 
 .highlighted-secondary {
-    color: var(--text-secondary);
+    color: var(--highlight-secondary);
 }
 
 /* Text align */

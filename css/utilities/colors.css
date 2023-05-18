@@ -135,6 +135,9 @@
     --text: var(--black-80);
     --text-secondary: var(--black-40);
     --text-button: var(--white-100);
-    --highlight-primary: var(--primary) !important;
+
+    /* Text highlighting colors */
+    --highlight-primary: var(--primary);
     --highlight-accent: var(--accent);
+    --highlight-secondary: var(--text-secondary);
 }
