@@ -14,7 +14,7 @@ npm i @neptune-css/neptune
 ### Use CDN
 Use the following tag to import neptune via cdn. Replace [VERSION] with the version you want (`vx.x.x`).
 ```html
-<link rel="stylesheet" href="http://cdn.neptunecss.org/neptune-css/[VERSION]/neptune.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css">
 ```
 
 #### Example
@@ -27,7 +27,7 @@ Use the following tag to import neptune via cdn. Replace [VERSION] with the vers
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Import neptune ui -->
-        <link rel="stylesheet" href="http://cdn.neptunecss.org/neptune-css/[VERSION]/neptune.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css">
         
         <title>Neptune example</title>
     </head>
