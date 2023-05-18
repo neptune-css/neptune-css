@@ -63,7 +63,7 @@
                     <input class="input-success" type="text" name="default-input" id="default-input" placeholder="Default input">
                 </div>
                 <span class="text-s input-validation validation-success">
-                    Sucess
+                    Success
                 </span>
             </div>
         </div>
@@ -79,7 +79,7 @@
                     <input class="input-warning" type="text" name="default-input" id="default-input" placeholder="Default input">
                 </div>
                 <span class="text-s input-validation validation-warning">
-                    Warning!
+                    Warning
                 </span>
             </div>
         </div>
@@ -95,7 +95,7 @@
                     <input class="input-error" type="text" name="default-input" id="default-input" placeholder="Default input">
                 </div>
                 <span class="text-s input-validation validation-error">
-                    Error!
+                    Error
                 </span>
             </div>
         </div>
@@ -115,7 +115,9 @@
                         </span>
                     </button>
                 </div>
-                <span class="text-s input-validation"></span>
+                <span class="text-s input-validation">
+                    <!-- Your validation message -->
+                </span>
             </div>
             <script>
                 const passwordInput = document.getElementById('password-input');
@@ -165,6 +167,54 @@
                         <i class="bi bi-search"></i>
                     </span>
                 </button>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Email input</h3>
+            <div class="input-box email-box">
+                <label class="text-m" for="email-input">Email:</label>
+                <div class="input-field">
+                    <span class="input-icon">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </span>
+                    <input type="email" inputmode="email" name="email-input" id="email-input" placeholder="mail@example.com">
+                </div>
+                <span class="text-s input-validation">
+                    <!-- Your validation message -->
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">Phone input</h3>
+            <div class="input-box">
+                <label class="text-m" for="phone-input">Phone:</label>
+                <div class="input-field">
+                    <span class="input-icon">
+                        <i class="bi bi-phone-fill"></i>
+                    </span>
+                    <input type="tel" inputmode="tel" name="phone-input" id="phone-input" placeholder="+01 234 56789">
+                </div>
+                <span class="text-s input-validation">
+                    <!-- Your validation message -->
+                </span>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3 class="example-title">URL input</h3>
+            <div class="input-box">
+                <label class="text-m" for="url-input">URL:</label>
+                <div class="input-field">
+                    <span class="input-icon">
+                        <i class="bi bi-globe2"></i>
+                    </span>
+                    <input type="url" inputmode="url" name="url-input" id="url-input" placeholder="https://yourdomain.com">
+                </div>
+                <span class="text-s input-validation">
+                    <!-- Your validation message -->
+                </span>
             </div>
         </div>
 
