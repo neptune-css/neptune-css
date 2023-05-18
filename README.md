@@ -1,17 +1,19 @@
-![readme_banner](https://github.com/neptune-css/neptune-css/assets/122671813/dcae4762-d754-476f-a8be-35715da77fe8)
+# Welcome to Neptune CSS!
 
+![](https://img.shields.io/github/v/tag/neptune-css/neptune-css?color=%2300AACC) ![](https://img.shields.io/npm/dm/@neptune-css/neptune?color=%2300AACC) ![](https://img.shields.io/npm/l/@neptune-css/neptune?color=%2300AACC) 
+***
 
-# Introduction
+![readme_banner](https://github.com/neptune-css/neptune-css/assets/122671813/20ba7132-a5bc-4d05-a03a-82a10e56ec34)
 
 ## Install
 
-### Use NMP
+### NMP
 Copy the following Code to install the [npm package](https://www.npmjs.com/package/@neptune-css/neptune).
 ```
 npm i @neptune-css/neptune
 ```
 
-### Use CDN
+### CDN
 Use the following tag to import neptune via cdn. Replace [VERSION] with the version you want (`vx.x.x`).
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css">
@@ -44,7 +46,7 @@ You can read the docs [here](http://docs.neptunecss.org).
 Download it in [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=NeptuneCSS.neptune-snippets) or checkout on [GitHub](https://github.com/neptune-css/neptune-snippets).
 
 ## License
-[MIT Licesnse](https://github.com/neptune-css/neptune-css/blob/main/LICENSE)
+[MIT LICENSE](https://github.com/neptune-css/neptune-css/blob/main/LICENSE)
 
 ## Author
-@[CGWebDev2003](https://github.com/CGWebDev2003)
+[Colin Grahm](https://github.com/CGWebDev2003)
