@@ -4,10 +4,13 @@ button {
     box-sizing: border-box;
     border-radius: var(--rounded-m);
     border: none;
-    color: var(--text-button);
     max-width: 450px;
     position: relative;
     transition: var(--transition-duration);
+}
+
+button .button-text {
+    color: var(--text-button);
 }
 
 button .button-icon-left {
@@ -31,27 +34,36 @@ button:focus {
 
 /* Button sizes */
 .button-s {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
     min-width: 96px;
     padding: 8px 20px;
 }
 
-.button-m {
-    font-size: 16px;
+.button-s .button-text {
+    font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+}
+
+.button-m {
     min-width: 128px;
     padding: 10px 26px;
 }
 
+.button-m .button-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
 .button-l {
+    min-width: 128px;
+    padding: 12px 32px;
+}
+
+.button-l .button-text {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    min-width: 128px;
-    padding: 12px 32px;
 }
 
 /* Primary button */
