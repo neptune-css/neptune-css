@@ -28,7 +28,7 @@ npm i neptunecss
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Import neptune ui -->
-        <link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css](https://cdn.jsdelivr.net/npm/neptunecss@0.9.1/neptune.min.css)">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss/neptune@[VERSION]/neptune.min.css">
         
         <title>Neptune example</title>
     </head>
