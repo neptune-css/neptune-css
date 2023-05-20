@@ -1,6 +1,6 @@
 {
   "name": "neptunecss",
-  "version": "0.9.2",
+  "version": "1.0.0",
   "description": "A lightweight CSS framework.",
   "main": "./neptune.css",
   "style": "./neptune.css",
