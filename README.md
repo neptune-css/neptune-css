@@ -42,7 +42,7 @@ npm i neptunecss
 You can read the docs [here](http://neptunecss.org).
 
 ## Snippets Extension
-Download it in [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=NeptuneCSS.neptune-snippets) or checkout on [GitHub](https://github.com/neptune-css/neptune-snippets).
+Download it in [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=NeptuneCSS.neptunecss-snippets) or checkout on [GitHub](https://github.com/neptune-css/neptune-snippets).
 
 ## License
 [MIT LICENSE](https://github.com/neptune-css/neptune-css/blob/main/LICENSE)
