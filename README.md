@@ -15,7 +15,7 @@ npm i neptunecss
 
 ### CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@0.9.1/neptune.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@[VERSION]/neptune.min.css">
 ```
 
 #### Example
