@@ -8,15 +8,14 @@
 ## Install
 
 ### NMP
-Copy the following Code to install the [npm package](https://www.npmjs.com/package/@neptune-css/neptune).
+Copy the following Code to install the [npm package](https://www.npmjs.com/package/neptunecss).
 ```
-npm i @neptune-css/neptune
+npm i neptunecss
 ```
 
 ### CDN
-Use the following tag to import neptune via cdn. Replace [VERSION] with the version you want (`vx.x.x`).
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@[VERSION]/neptune.min.css">
 ```
 
 #### Example
@@ -29,7 +28,7 @@ Use the following tag to import neptune via cdn. Replace [VERSION] with the vers
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Import neptune ui -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@neptune-css/neptune@[VERSION]/neptune.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@[VERSION]/neptune.min.css">
         
         <title>Neptune example</title>
     </head>
@@ -40,7 +39,7 @@ Use the following tag to import neptune via cdn. Replace [VERSION] with the vers
 ```
 
 ## Documentation
-You can read the docs [here](http://docs.neptunecss.org).
+You can read the docs [here](http://neptunecss.org).
 
 ## Snippets Extension
 Download it in [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=NeptuneCSS.neptune-snippets) or checkout on [GitHub](https://github.com/neptune-css/neptune-snippets).
