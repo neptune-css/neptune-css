@@ -15,7 +15,7 @@ npm i neptunecss
 
 ### CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@[VERSION]/neptune.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@latest/neptune.min.css">
 ```
 
 #### Example
@@ -28,7 +28,7 @@ npm i neptunecss
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Import neptune ui -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@[VERSION]/neptune.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neptunecss@latest/neptune.min.css">
         
         <title>Neptune example</title>
     </head>
