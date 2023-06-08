@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [v1.1.1] - 2023.06.08
+
+## Changed
+
+- Changed class of 'select-container' to 'select-box'
+
 ## [v1.1.0] - 2023-06-08
 
 ### Added

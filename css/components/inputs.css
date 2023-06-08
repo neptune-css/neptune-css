@@ -391,7 +391,7 @@ input[type=number] {
 /* ----------------------------- */
 /* -------- Radio buttons ------ */
 /* ----------------------------- */
-.select-container {
+.select-box {
 	display: flex;
 	position: relative;
 	gap: 2px;
@@ -415,11 +415,6 @@ input[type=number] {
 
 .hidden-select:hover {
 	cursor: pointer;
-}
-
-.hidden-select:hover .select-container {
-	transition: var(--transition-duration);
-	background-color: aqua;
 }
 
 .hidden-select option {
