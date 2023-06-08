@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [v1.1.0] - 2023-06-08
+
+### Added
+
+- Added select input
+
 ## [0.9.1] - 2023-05-18
 
 ## Added
@@ -29,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v0.8.1] - 2023-05-17
 
-### Added 
+### Added
 
 - Added README content
 
@@ -110,7 +116,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Deleted dark shades from every color
 - Deleted '-l' from color variable names
 
-### Added 
+### Added
 
 - Default toast
 
@@ -142,7 +148,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.1] - 2023-04-25
 
-### Fixed 
+### Fixed
 
 - Changed title of the framework in readme file
 
@@ -199,4 +205,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Center
     - End/right
     - Justify
-- 
+-

@@ -35,28 +35,28 @@
 
 /* Setup input field validation states */
 /* Validation information */
-.input-field-info { 
+.input-field-info {
     background-color: var(--info-90);
     border: 3px solid var(--info);
 }
 .input-info { background-color: var(--info-90);}
 
 /* Validation success */
-.input-field-success { 
+.input-field-success {
     background-color: var(--success-90);
     border: 3px solid var(--success);
 }
 .input-success { background-color: var(--success-90);}
 
 /* Validation warning */
-.input-field-warning { 
+.input-field-warning {
     background-color: var(--warning-90);
     border: 3px solid var(--warning);
 }
 .input-warning { background-color: var(--warning-90);}
 
 /* Validation error */
-.input-field-error { 
+.input-field-error {
     background-color: var(--error-90);
     border: 3px solid var(--error);
 }
@@ -144,7 +144,7 @@
 
 .simple-slider {
   -webkit-appearance: none;
-  appearance: none; 
+  appearance: none;
   width: 100%;
   cursor: pointer;
   outline: none;
@@ -166,7 +166,7 @@
 
 .simple-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none; 
+  appearance: none;
   height: 15px;
   width: 15px;
   background-color: #fff;
@@ -279,8 +279,8 @@ input[type=number] {
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-.checkbox-box > .checkbox:checked { 
-    border: 1px solid var(--white-80);    
+.checkbox-box > .checkbox:checked {
+    border: 1px solid var(--white-80);
     background-color: var(--primary);
 }
 
@@ -289,27 +289,27 @@ input[type=number] {
 }
 
 /* Setup accent checkbox */
-.checkbox-box > .checkbox-accent:checked {    
+.checkbox-box > .checkbox-accent:checked {
     background-color: var(--accent);
 }
 
 /* Setup information checkbox */
-.checkbox-box > .checkbox-info:checked {    
+.checkbox-box > .checkbox-info:checked {
     background-color: var(--info);
 }
 
 /* Setup success checkbox */
-.checkbox-box > .checkbox-success:checked {    
+.checkbox-box > .checkbox-success:checked {
     background-color: var(--success);
 }
 
 /* Setup warning checkbox */
-.checkbox-box > .checkbox-warning:checked {    
+.checkbox-box > .checkbox-warning:checked {
     background-color: var(--warning);
 }
 
 /* Setup error checkbox */
-.checkbox-box > .checkbox-error:checked {    
+.checkbox-box > .checkbox-error:checked {
     background-color: var(--error);
 }
 
@@ -361,8 +361,8 @@ input[type=number] {
     box-shadow: inset 1em 1em var(--primary);
 }
 
-.radio-box > .radio-button:checked { 
-    border: 1px solid var(--white-80);    
+.radio-box > .radio-button:checked {
+    border: 1px solid var(--white-80);
     background-color: var(--text-button);
 }
 
@@ -387,3 +387,43 @@ input[type=number] {
 
 /* Accent radio button */
 .radio-box > .radio-button-error::before { box-shadow: inset 1em 1em var(--error);}
+
+/* ----------------------------- */
+/* -------- Radio buttons ------ */
+/* ----------------------------- */
+.select-container {
+	display: flex;
+	position: relative;
+	gap: 2px;
+	padding: 8px 32px;
+	background-color: var(--background);
+	cursor: pointer;
+	border: 1px solid var(--white-70);
+	border-radius: var(--rounded-s);
+	align-items: center;
+	justify-content: start;
+}
+
+.hidden-select {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.hidden-select:hover {
+	cursor: pointer;
+}
+
+.hidden-select:hover .select-container {
+	transition: var(--transition-duration);
+	background-color: aqua;
+}
+
+.hidden-select option {
+	font-size: 16px;
+	line-height: 32px;
+	padding: 12px 0;
+}
